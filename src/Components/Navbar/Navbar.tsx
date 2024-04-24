@@ -22,12 +22,12 @@ const Navigation = () => {
       } else {
         setScrolled(false);
       }
-    };
+    }
 
     window.addEventListener("scroll", onScroll);
 
-    return window.removeEventListener("scroll", onScroll);
-  }, [scrolled]);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [])
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
