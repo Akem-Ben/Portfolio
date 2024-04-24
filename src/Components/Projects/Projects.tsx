@@ -239,10 +239,7 @@ const Projects = () => {
                       style={{ width: "50%", padding: "10px" }}
                     >
                       <h4>
-                        Freelance Web Html/Css Tutor{" "}
-                        <a href="https://decagon.institute/" target="__blank">
-                          <FiExternalLink className="link-out" />
-                        </a>
+                        Freelance Web Html/Css Tutor
                       </h4>
                       <h4>Activities:</h4>
                       <ul>
@@ -268,7 +265,7 @@ const Projects = () => {
                       style={{ width: "50%", padding: "10px" }}
                     >
                       <h4>
-                        Freelance Web Html/Css Tutor{" "}
+                        Associate Software Engineer{" "}
                         <a href="https://decagon.institute/" target="__blank">
                           <FiExternalLink className="link-out" />
                         </a>
