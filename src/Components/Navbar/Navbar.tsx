@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from '../assets/images/Abn.jpeg'
+import logo from '../../assets/images/Abn.jpeg'
 import { useState, useEffect } from "react";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 import { TfiTwitter } from "react-icons/tfi";
@@ -32,7 +32,7 @@ const Navigation = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className="logo"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggle-icon"></span>
