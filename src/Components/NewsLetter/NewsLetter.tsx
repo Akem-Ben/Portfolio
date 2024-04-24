@@ -1,0 +1,54 @@
+import { Alert, Col, Row } from "react-bootstrap";
+import { useState, useEffect } from "react";
+
+interface NewsLetterProps {
+    onValidated: (email: string) => void | any;
+    status: string | any;
+    message: string | any;
+ }
+
+const NewsLetter = (MailingListProps:NewsLetterProps) => {
+
+    const [email, setEmail] = useState("")
+
+    const handleSubmit = (e: any) => {
+        e.preventDefault();
+        email && email.indexOf('@') > -1 && MailingListProps.onValidated(email);
+       
+    }
+
+    const clearFields = () => {
+        setEmail("");
+    }
+
+    useEffect(() => {
+        if(MailingListProps.status === "success") clearFields();
+    },[MailingListProps.status])
+
+    return (
+        <>
+        <Col lg={12}>
+            <div className="newsletter-bx">
+                <Row>
+                    <Col lg={12} md={6} xl={5}>
+                        <h3>Subscribe to our Newsleter</h3>
+                        {MailingListProps.status === "sending" && <Alert>Sending...</Alert>}
+                        {MailingListProps.status === "error" && <Alert variant="danger">{MailingListProps.message}</Alert>}
+                        {MailingListProps.status === "success" && <Alert variant="success">{MailingListProps.message}</Alert>}
+                    </Col>
+                    <Col md={6} xl={7}>
+                        <form onSubmit={handleSubmit}>
+                            <div className="new-email-bx">
+                                <input value={email} type='email' onChange={(e)=> setEmail(e.target.value)} placeholder="Email Address"/>
+                                <button type='submit'>Submit</button>
+                            </div>
+                        </form>
+                    </Col>
+                </Row>
+            </div>
+        </Col>
+        </>
+    )
+}
+
+export default NewsLetter
