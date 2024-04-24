@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "./Banner.css";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-import bannerImage from "../../assets/images/banner-background.jpg";
+import bannerImage from "../../assets/images/banner-background.png";
 import { useEffect, useState } from "react";
 
 const Banner = () => {
@@ -69,7 +69,7 @@ const Banner = () => {
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={bannerImage} alt="header image" style={{borderRadius: '50%'}}/>
+            <img src={bannerImage} alt="header image"/>
           </Col>
         </Row>
       </Container>
