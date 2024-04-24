@@ -5,6 +5,7 @@ import logo from '../../assets/images/Abn.jpeg'
 import { useState, useEffect } from "react";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 import { TfiTwitter } from "react-icons/tfi";
+import { FaGithub } from "react-icons/fa";
 import './Navbar.css'
 
 const Navigation = () => {
@@ -69,19 +70,28 @@ const Navigation = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/akemini-ndaobong-008678229/" target="_blank" rel="noopener noreferrer">
               <PiLinkedinLogoBold style={{color: 'white', fontWeight: 900}} />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/TechAkem" target="_blank" rel="noopener noreferrer">
               <TfiTwitter style={{color: 'white', fontWeight: 900}} />
               </a>
+              <a href="https://github.com/Akem-ben" target="_blank" rel="noopener noreferrer">
+              <FaGithub style={{color: 'white', fontWeight: 900}} />
+              </a>
             </div>
+            <Nav.Link href="#connect"
+            className={
+              activeLink === "connect" ? "active navbar-link" : "navbar-link"
+            }
+            onClick={() => onUpdateActiveLink("connect")}
+            >
             <button
               className="contact-us"
-              onClick={() => console.log("contact us")}
             >
               <span>Let's Connect</span>
             </button>
+            </Nav.Link>
           </span>
         </Navbar.Collapse>
       </Container>

@@ -1,8 +1,9 @@
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 import NewsLetter from './NewsLetter'
 
+
 export const MailChimForm = () => {
-        const myUrl = `${process.env.REACT_APP_MAILCHIMP_URL}?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`
+        const myUrl = `https://gmail.us22.list-manage.com/subscribe/post?u=be281cf83c511348edcc3ca19&id=041ae9226f`
 
         return (
         <MailchimpSubscribe 
