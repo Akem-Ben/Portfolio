@@ -6,7 +6,6 @@ import ProjectCard from "./ProjectCards/ProjectCards";
 import colorSharp2 from "../../assets/images/color-sharp2.png";
 import { FiExternalLink } from "react-icons/fi";
 import "animate.css";
-import TrackVisibility from "react-on-screen";
 
 const Projects = () => {
   const projects = [
