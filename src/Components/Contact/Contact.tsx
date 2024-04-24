@@ -65,10 +65,9 @@ const Contact = () => {
           <TrackVisibility>
 
               {({ isVisible }) =>
-              <div className={isVisible ? 'animate__animated animate__swing' : ""}>
-            <img src={contactImage} alt="contact us" />
+            <img src={contactImage} alt="contact us" className={isVisible ? 'animate__animated animate__swing' : ""}/>
           }
-          
+
            </TrackVisibility>
           </Col>
           <Col md={6}>
