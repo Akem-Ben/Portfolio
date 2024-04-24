@@ -32,7 +32,7 @@ const Contact = () => {
     try {
       e.preventDefault();
       setButtonText("Sending...");
-      let response = await fetch("http://localhost:5000/contact", {
+      let response = await fetch("https://portfolio-eight-beta-28.vercel.app/5000/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
