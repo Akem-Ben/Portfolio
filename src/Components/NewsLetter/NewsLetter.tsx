@@ -1,5 +1,7 @@
 import { Alert, Col, Row } from "react-bootstrap";
 import { useState, useEffect } from "react";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 interface NewsLetterProps {
     onValidated: (email: string) => void | any;
@@ -29,7 +31,9 @@ const NewsLetter = (MailingListProps:NewsLetterProps) => {
     return (
         <>
         <Col lg={12}>
-            <div className="newsletter-bx">
+        <TrackVisibility>
+              {({ isVisible }) =>
+            <div style={{display: `${isVisible ? 'block' : 'none'}`}} className={ `newsletter-bx ${isVisible ? 'animate__animated animate__zoomInLeft' : "" }`}>
                 <Row>
                     <Col lg={12} md={6} xl={5}>
                         <h3>Subscribe to our Newsleter</h3>
@@ -47,8 +51,11 @@ const NewsLetter = (MailingListProps:NewsLetterProps) => {
                     </Col>
                 </Row>
             </div>
+             }
+             </TrackVisibility>
         </Col>
         </>
+        //animate__flip
     )
 }
 

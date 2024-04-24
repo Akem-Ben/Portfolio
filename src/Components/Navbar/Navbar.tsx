@@ -6,7 +6,9 @@ import { useState, useEffect } from "react";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 import { TfiTwitter } from "react-icons/tfi";
 import { FaGithub } from "react-icons/fa";
-import './Navbar.css'
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+import './Navbar.css';
 
 const Navigation = () => {
   const [activeLink, setActiveLink] = useState("home");
