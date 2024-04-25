@@ -5,44 +5,54 @@ import Nav from "react-bootstrap/Nav";
 import ProjectCard from "./ProjectCards/ProjectCards";
 import colorSharp2 from "../../assets/images/color-sharp2.png";
 import { FiExternalLink } from "react-icons/fi";
+import smooze from "../../assets/images/smooze.png";
+import royalSpring from "../../assets/images/royal-spring.png";
+import backend from '../../assets/images/interswitch-backend.png';
+import royalBlogs from '../../assets/images/royal.png';
+import tripleMovies from '../../assets/images/Trm-movies.png';
 import "animate.css";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Quickbite",
-      description: "The best app alive",
-      technologies: "ALL of them",
-      image: prj,
-      projectUrl: "You gotta let it go bro",
+      title: "Smooze Music App",
+      description: "A musicstreaming Platform.",
+      technologies: "NodeJs, ReactJs, Paystack, Typescript Javascript, Postgresql, Swagger.",
+      contribution: "I was the Team lead as well as a fullstack engineer.",
+      image: smooze,
+      projectUrl: "https://smoozepro.netlify.app/",
     },
     {
-      title: "Quickbite",
-      description: "The best app alive",
-      technologies: "ALL of them",
-      image: prj,
-      projectUrl: "You gotta let it go bro",
+      title: "Royal Spring College Students Portal",
+      description: "A students portal platform that allows students register for courses, mark courses as completed and view registered courses.",
+      technologies: "NodeJs, ReactJs, Redux, Typescript and Tailwind-CSS PostgreSQL.",
+      contribution: "A personal project I built myself (Both frontend and backend, including creating and incorporating an external api).",
+      image: royalSpring,
+      projectUrl: "https://royal-spring-school-frontend.onrender.com/",
     },
     {
-      title: "Quickbite",
-      description: "The best app alive",
-      technologies: "ALL of them",
-      image: prj,
-      projectUrl: "You gotta let it go bro",
+      title: "Interswitch Intergration To an App (Backend Project).",
+      description: "Integrating the Interswitch Payment API with the backend of the application, generating the agent key, authorisation, creating a custom endpoint to verify payment status and creating endpoints to handle transfers, card payments, etc.",
+      technologies: "Crypto, Axios, Forge, Nodejs, Express, Typescript, Node-forge, Interswitch API.",
+      contribution: "I personally built the whole structure from start to finish.",
+      image: backend,
+      projectUrl: "https://github.com/Akem-Ben/Interswitch",
     },
     {
-      title: "Quickbite",
-      description: "The best app alive",
-      technologies: "ALL of them",
-      image: prj,
-      projectUrl: "You gotta let it go bro",
+      title: "Royal Blogs",
+      description: "A blogging platform that allows users to register, create, read, update and delete blog posts.",
+      technologies: "Axios, bootstrap, formik, primereact, react, react-bootstrap, react-icons, react-paginate, react-quill, react-toastify, yup, tailwindcss, typescript",
+      image: royalBlogs,
+      contribution: "I personally built the whole structure from start to finish.",
+      projectUrl: "https://royal-blogs.netlify.app/",
     },
     {
-      title: "Quickbite",
-      description: "The best app alive",
-      technologies: "ALL of them",
-      image: prj,
-      projectUrl: "You gotta let it go bro",
+      title: "Triple Movies",
+      description: "A simple personal project where I consumed an external API that allows users to search for movies, view movie details and movies to favourites.",
+      technologies: "Axios, react, tailwindcss, express, typescript",
+      image: tripleMovies,
+      contribution: "I personally built the whole structure from start to finish.",
+      projectUrl: "https://triple-movies.netlify.app/",
     },
     {
       title: "Quickbite",
@@ -60,6 +70,10 @@ const Projects = () => {
     },
   ];
 
+  const projectRedirectionFunction = (projectUrl:string) => {
+    return window.open(projectUrl, '_blank')
+  }
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -68,7 +82,8 @@ const Projects = () => {
             <h2 className="section-title">Projects & Volunteer Activities</h2>
             <p>
               These include personal projects, contributions to companies and
-              collaborations
+              collaborations (Hover over each card to view more details. You can also click on each card to visit project page/Github repository) <br />
+              All projects are available on my Github repository which can be navigated to using Github icon on the navbar.
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
@@ -84,15 +99,12 @@ const Projects = () => {
                     Volunteer Activities/Accomplishments
                   </Nav.Link>
                 </Nav.Item>
-                {/* <Nav.Item>
-                <Nav.Link eventKey="third">Tab Three</Nav.Link>
-              </Nav.Item> */}
               </Nav>
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
                     {projects.map((project, index) => (
-                      <ProjectCard key={index} {...project} />
+                     <ProjectCard key={index} {...project} onClick={() => projectRedirectionFunction(project.projectUrl)}/>
                     ))}
                   </Row>
                 </Tab.Pane>
