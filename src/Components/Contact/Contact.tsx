@@ -4,6 +4,7 @@ import { useState } from "react";
 import contactImage from "../../assets/images/contact-img.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { sendMessage } from "../../Axios/apiCall";
 
 const Contact = () => {
   const formInitialDetails = {
@@ -32,19 +33,12 @@ const Contact = () => {
     try {
       e.preventDefault();
       setButtonText("Sending...");
-      let response = await fetch("https://portfolio-eight-beta-28.vercel.app/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json;charset=utf-8",
-        },
-        body: JSON.stringify(formDetails),
-      });
+      let response = await sendMessage(formDetails)
+      console.log(response)
       setButtonText("Send");
-      let result = await response.json();
-      console.log(result);
       setFormDetails(formInitialDetails);
 
-      if (result.code === 200) {
+      if (response.status === 200) {
         setStatus({ success: true, message: "Message Sent successfully" });
       } else {
         setStatus({
@@ -52,7 +46,27 @@ const Contact = () => {
           message: "Something went wrong, please try again later.",
         });
       }
+
+      setTimeout(() => {
+        setStatus({
+          success: false,
+          message: "",
+        });
+      }, 3000);
+
     } catch (error) {
+      setButtonText("Send");
+      setStatus({
+        success: false,
+        message: "Something went wrong, please try again later.",
+      });
+
+      setTimeout(() => {
+        setStatus({
+          success: false,
+          message: "",
+        });
+      }, 5000);
       console.log(error);
     }
   };

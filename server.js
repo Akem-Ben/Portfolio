@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors';
 import nodemailer from 'nodemailer'
 import dotenv from 'dotenv';
+import logger from 'morgan';
 
 
 const router = express.Router();
@@ -13,6 +14,7 @@ dotenv.config()
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
+app.use(logger("dev"));
 
 app.listen(5000, () => console.log("Server Running"));
 
