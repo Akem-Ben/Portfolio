@@ -1,5 +1,4 @@
 import "./Projects.css";
-import prj from "../../assets/images/prj.jpeg";
 import { Col, Container, Row, Tab } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import ProjectCard from "./ProjectCards/ProjectCards";
@@ -10,6 +9,8 @@ import royalSpring from "../../assets/images/royal-spring.png";
 import backend from '../../assets/images/interswitch-backend.png';
 import royalBlogs from '../../assets/images/royal.png';
 import tripleMovies from '../../assets/images/Trm-movies.png';
+import events from '../../assets/images/eventz.png';
+import backend2 from '../../assets/images/camo-backend.png';
 import "animate.css";
 
 const Projects = () => {
@@ -17,7 +18,7 @@ const Projects = () => {
     {
       title: "Smooze Music App",
       description: "A musicstreaming Platform.",
-      technologies: "NodeJs, ReactJs, Paystack, Typescript Javascript, Postgresql, Swagger.",
+      technologies: "NodeJs, Cloudinary, ReactJs, Paystack, Typescript Javascript, Postgresql, Swagger.",
       contribution: "I was the Team lead as well as a fullstack engineer.",
       image: smooze,
       projectUrl: "https://smoozepro.netlify.app/",
@@ -25,7 +26,7 @@ const Projects = () => {
     {
       title: "Royal Spring College Students Portal",
       description: "A students portal platform that allows students register for courses, mark courses as completed and view registered courses.",
-      technologies: "NodeJs, ReactJs, Redux, Typescript and Tailwind-CSS PostgreSQL.",
+      technologies: "NodeJs, Cloudinary, ReactJs, Redux, Typescript and Tailwind-CSS PostgreSQL.",
       contribution: "A personal project I built myself (Both frontend and backend, including creating and incorporating an external api).",
       image: royalSpring,
       projectUrl: "https://royal-spring-school-frontend.onrender.com/",
@@ -40,8 +41,8 @@ const Projects = () => {
     },
     {
       title: "Royal Blogs",
-      description: "A blogging platform that allows users to register, create, read, update and delete blog posts.",
-      technologies: "Axios, bootstrap, formik, primereact, react, react-bootstrap, react-icons, react-paginate, react-quill, react-toastify, yup, tailwindcss, typescript",
+      description: "A blogging platform that allows users to register, create, read, comment on, like, dislike and delete blog posts.",
+      technologies: "Axios, Cloudinary, bootstrap, formik, primereact, react, react-bootstrap, react-icons, react-paginate, react-quill, react-toastify, yup, tailwindcss, typescript",
       image: royalBlogs,
       contribution: "I personally built the whole structure from start to finish.",
       projectUrl: "https://royal-blogs.netlify.app/",
@@ -55,18 +56,20 @@ const Projects = () => {
       projectUrl: "https://triple-movies.netlify.app/",
     },
     {
-      title: "Quickbite",
-      description: "The best app alive",
-      technologies: "ALL of them",
-      image: prj,
-      projectUrl: "You gotta let it go bro",
+      title: "Royal Events",
+      description: "An events management system that allows users to create, view, report, comment on, like, update, register/pay for and delete events. An admin section that allows the admin to block events, block users etc.",
+      technologies: "cloudinary, cross-env, express, jsonwebtoken, multer, multer-storage-cloudinary, nodemailer, postgres, sequelize, axios, bootstrap, react, sweetalert2, tailwindcss",
+      image: events,
+      contribution: "I personally built the whole structure from start to finish.",
+      projectUrl: "https://main--royal-events.netlify.app/",
     },
     {
-      title: "Quickbite",
-      description: "The best app alive",
-      technologies: "ALL of them",
-      image: prj,
-      projectUrl: "You gotta let it go bro",
+      title: "Camo Institution (Backend Project).",
+      description: "An examination system allowing lecturers create exams and then allowing pre-registered students to enroll in courses, take examinations and view their examination scores. Examinations are automatically marked using pre-loaded answers supplied upon examinations creation",
+      technologies: "Axios, bcryptjs, cross-env, express, jsonwebtoken, lodash.merge, morgan, nodemailer, sequelize, typescript, uuid, zod",
+      image: backend2,
+      contribution: "I personally built the whole structure from start to finish.",
+      projectUrl: "https://github.com/Akem-Ben/Camo_Institution_Backend",
     },
   ];
 
