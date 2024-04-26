@@ -86,7 +86,8 @@ const Projects = () => {
             <p>
               These include personal projects, contributions to companies and
               collaborations (Hover over each card to view more details. You can also click on each card to visit project page/Github repository) <br />
-              All projects are available on my Github repository which can be navigated to using Github icon on the navbar.
+              All projects are available on my Github repository which can be navigated to using Github icon on the navbar.< br />
+              <span style={{fontSize: '20px', fontWeight: 800}}><em>(NB: Please if you click on any project card and it opens a new tab but fails to load immediately or it shows no data, please reload or bear a little while, projects and databases are hosted using free hosting services. Thank you)</em></span>
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
