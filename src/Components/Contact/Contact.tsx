@@ -34,7 +34,6 @@ const Contact = () => {
       e.preventDefault();
       setButtonText("Sending...");
       let response = await sendMessage(formDetails)
-      console.log(response)
       setButtonText("Send");
       setFormDetails(formInitialDetails);
 
