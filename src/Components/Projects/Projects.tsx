@@ -48,14 +48,6 @@ const Projects = () => {
       projectUrl: "https://royal-blogs.netlify.app/",
     },
     {
-      title: "Triple Movies",
-      description: "A simple personal project where I consumed an external API that allows users to search for movies, view movie details and movies to favourites.",
-      technologies: "Axios, react, tailwindcss, express, typescript",
-      image: tripleMovies,
-      contribution: "I personally built the whole structure from start to finish.",
-      projectUrl: "https://triple-movies.netlify.app/",
-    },
-    {
       title: "Royal Events",
       description: "An events management system that allows users to create, view, report, comment on, like, update, register/pay for and delete events. An admin section that allows the admin to block events, block users etc.",
       technologies: "cloudinary, cross-env, express, jsonwebtoken, multer, multer-storage-cloudinary, nodemailer, postgres, sequelize, axios, bootstrap, react, sweetalert2, tailwindcss",
@@ -70,6 +62,14 @@ const Projects = () => {
       image: backend2,
       contribution: "I personally built the whole structure from start to finish.",
       projectUrl: "https://github.com/Akem-Ben/Camo_Institution_Backend",
+    },
+    {
+      title: "Triple Movies",
+      description: "A simple personal project where I consumed an external API that allows users to search for movies, view movie details and movies to favourites.",
+      technologies: "Axios, react, tailwindcss, express, typescript",
+      image: tripleMovies,
+      contribution: "I personally built the whole structure from start to finish.",
+      projectUrl: "https://triple-movies.netlify.app/",
     },
   ];
 
