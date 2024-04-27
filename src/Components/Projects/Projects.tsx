@@ -25,7 +25,7 @@ const Projects = () => {
     },
     {
       title: "Royal Spring College Students Portal",
-      description: "A students portal platform that allows students register for courses, mark courses as completed and view registered courses.",
+      description: "A students' portal platform that allows students register for courses, mark courses as completed and view registered courses.",
       technologies: "NodeJs, Cloudinary, ReactJs, Redux, Typescript and Tailwind-CSS PostgreSQL.",
       contribution: "A personal project I built myself (Both frontend and backend, including creating and incorporating an external api).",
       image: royalSpring,
@@ -40,7 +40,7 @@ const Projects = () => {
       projectUrl: "https://github.com/Akem-Ben/Interswitch",
     },
     {
-      title: "Royal Blogs",
+      title: "Beat Tech Blog",
       description: "A blogging platform that allows users to register, create, read, comment on, like, dislike and delete blog posts.",
       technologies: "Axios, Cloudinary, bootstrap, formik, primereact, react, react-bootstrap, react-icons, react-paginate, react-quill, react-toastify, yup, tailwindcss, typescript",
       image: royalBlogs,
@@ -57,7 +57,7 @@ const Projects = () => {
     },
     {
       title: "Camo Institution (Backend Project).",
-      description: "An examination system allowing lecturers create exams and then allowing pre-registered students to enroll in courses, take examinations and view their examination scores. Examinations are automatically marked using pre-loaded answers supplied upon examinations creation",
+      description: "An examination system allowing lecturers create exams and then allowing pre-registered students to enroll in courses, take examinations and view their examination scores. Examinations are automatically marked using pre-loaded answers supplied during examinations creation",
       technologies: "Axios, bcryptjs, cross-env, express, jsonwebtoken, lodash.merge, morgan, nodemailer, sequelize, typescript, uuid, zod",
       image: backend2,
       contribution: "I personally built the whole structure from start to finish.",
@@ -65,8 +65,8 @@ const Projects = () => {
     },
     {
       title: "Triple Movies",
-      description: "A simple personal project where I consumed an external API that allows users to search for movies, view movie details and movies to favourites.",
-      technologies: "Axios, react, tailwindcss, express, typescript",
+      description: "A simple personal project where I consumed an external API that allows users to search for movies, view movie details and add movies to favourites.",
+      technologies: "Axios, react, tailwindcss, express, typescript, https://www.omdbapi.com/ API",
       image: tripleMovies,
       contribution: "I personally built the whole structure from start to finish.",
       projectUrl: "https://triple-movies.netlify.app/",
