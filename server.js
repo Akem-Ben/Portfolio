@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import express from 'express'
 import cors from 'cors';
 import nodemailer from 'nodemailer'
@@ -35,7 +36,7 @@ contactEmail.verify((error) => {
 });
 
 router.post("/contact", (request, response) => {
-  const name = request.body.firstName + request.body.lastName;
+  const name = `${request.body.firstName} ${request.body.lastName}`;
   const email = request.body.email;
   const message = request.body.message;
   const phone = request.body.phone;

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Col, Container, Row } from "react-bootstrap";
 import "./Contact.css";
 import { useState } from "react";
@@ -33,7 +34,7 @@ const Contact = () => {
     try {
       e.preventDefault();
       setButtonText("Sending...");
-      let response = await sendMessage(formDetails)
+      const response = await sendMessage(formDetails)
       setButtonText("Send");
       setFormDetails(formInitialDetails);
 
