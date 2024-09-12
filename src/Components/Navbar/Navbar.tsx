@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect } from "react";
 import { PiLinkedinLogoBold } from "react-icons/pi";
-import { TfiTwitter } from "react-icons/tfi";
+// import { TfiTwitter } from "react-icons/tfi";
 import { FaGithub } from "react-icons/fa";
 import 'animate.css';
 import './Navbar.css';
@@ -72,9 +72,9 @@ const Navigation = () => {
               <a href="https://www.linkedin.com/in/akemini-ndaobong-008678229/" target="_blank" rel="noopener noreferrer">
               <PiLinkedinLogoBold style={{color: 'white', fontWeight: 900}} />
               </a>
-              <a href="https://twitter.com/TechAkem" target="_blank" rel="noopener noreferrer">
+              {/* <a href="https://twitter.com/TechAkem" target="_blank" rel="noopener noreferrer">
               <TfiTwitter style={{color: 'white', fontWeight: 900}} />
-              </a>
+              </a> */}
               <a href="https://github.com/Akem-ben" target="_blank" rel="noopener noreferrer">
               <FaGithub style={{color: 'white', fontWeight: 900}} />
               </a>
