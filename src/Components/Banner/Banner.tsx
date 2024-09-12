@@ -20,9 +20,9 @@ const Banner = () => {
   const period = 100;
 
   const tick = () => {
-    let index = loopNum % wordsToRotate.length;
-    let fullText = wordsToRotate[index];
-    let updatedText = isDeletingState
+    const index = loopNum % wordsToRotate.length;
+    const fullText = wordsToRotate[index];
+    const updatedText = isDeletingState
       ? fullText.substring(0, currentText.length - 1)
       : fullText.substring(0, currentText.length + 1);
 
@@ -43,7 +43,7 @@ const Banner = () => {
   };
 
   useEffect(() => {
-    let ticker = setInterval(() => {
+    const ticker = setInterval(() => {
       tick();
     }, delta);
 
@@ -72,9 +72,9 @@ const Banner = () => {
                   <p>
                     A software developer who is driven by a passion for growth
                     and leveraging technology to solve problems. Competent in
-                    Javascript, Typescript, ReactJs, NodeJs, ExpressJs, Agile
+                    Javascript, Typescript, React, Node.Js, Express.Js, Agile
                     Methodologies, HTML, Cascading Style Sheets (CSS), MongoDB
-                    and Postgresql, I am confident in my ability to deliver
+                    and PostgreSQL, I am confident in my ability to deliver
                     innovative solutions that drive organizational success.
                   </p>
                   <a href="#connect" style={{ textDecoration: "none" }}>
