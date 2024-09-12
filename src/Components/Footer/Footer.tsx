@@ -1,10 +1,11 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import './Footer.css';
-import { MailChimForm } from '../NewsLetter/MailChimForm';
+// import { MailChimForm } from '../NewsLetter/MailChimForm';
 import logo from '../../assets/images/Abn.jpeg';
 import { PiLinkedinLogoBold } from "react-icons/pi";
 // import { TfiTwitter } from "react-icons/tfi";
 import { FaGithub } from "react-icons/fa";
+import NewsLetter from '../NewsLetter/NewsLetter';
 
 const Footer = () => {
 
@@ -13,7 +14,7 @@ const Footer = () => {
         <footer className='footer'>
             <Container>
                 <Row className='align-item-center'>
-                    <MailChimForm />
+                    <NewsLetter />
                     <Col sm={6} >
                         <img src={logo} alt="logo" style={{ borderRadius: '30%' }} width={100} />
                     </Col>
