@@ -27,7 +27,7 @@ const ProjectCard = (CardProps:ProjectCardProps) => {
                     <h4 style={{fontSize: '20px'}}>{CardProps.title}</h4>
                     <span>{CardProps.description}</span><br />
                     <span><h5 style={{color: '#E69E7F', display: 'inline'}}><b>Tech: </b></h5>{CardProps.technologies}</span><br />
-                    <span><h5 style={{color: '#E69E7F', display: 'inline'}}><b>My Role: </b></h5>{CardProps.contribution}</span>
+                    <span><h5 style={{color: '#E69E7F', display: 'inline'}}><b>Role: </b></h5>{CardProps.contribution}</span>
                 </div>
             </div>
         </Col>

@@ -2,8 +2,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./Skills.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import sixty from "../../assets/images/sixtyPercent.jpeg";
-import seventyFive from "../../assets/images/seventyFivePercent.jpeg";
 import ninetyFive from "../../assets/images/ninetyFivePercent.jpeg";
 import colorSharp from "../../assets/images/color-sharp.png";
 import "animate.css";
