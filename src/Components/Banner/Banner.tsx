@@ -68,7 +68,7 @@ const Banner = () => {
                   }
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
-                  <h1 style={{ minHeight: "200px" }}>
+                  <h1 className="intro">
                     {`Hi, I am Akemini, a`}{" "}
                     <span className="wrap">{currentText}</span>
                   </h1>

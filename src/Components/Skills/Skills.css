@@ -21,7 +21,7 @@
       margin: 14px 0 75px 0;
   }
   .skill-slider {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
   }
@@ -36,3 +36,37 @@
     width: 40%;
     z-index: -4;
   }
+
+  /* Skills Section Styles */
+.skills-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.skills-column {
+  width: 33.3%;
+}
+
+.skills-heading {
+  color: gold;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.skills-description {
+  margin: 10px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
+  
+  .skills-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
