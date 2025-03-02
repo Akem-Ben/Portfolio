@@ -10,10 +10,13 @@ const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeletingState, setIsDeletingState] = useState(false);
   const wordsToRotate = [
-    "Full-stack Developer (Backend Heavy)",
+    "Fullstack Developer",
     "ReactJs Developer",
-    "Node.js Developer",
+    "NodeJs Developer",
+    "NextJs Developer",
     "Typescript Developer",
+    "Javascript Developer",
+    "React Native Developer"
   ];
   const [currentText, setCurrentText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
@@ -70,12 +73,19 @@ const Banner = () => {
                     <span className="wrap">{currentText}</span>
                   </h1>
                   <p>
-                    A software developer who is driven by a passion for growth
-                    and leveraging technology to solve problems. Competent in
-                    Javascript, Typescript, React, Node.Js, Express.Js, Agile
-                    Methodologies, HTML, Cascading Style Sheets (CSS), MongoDB
-                    and PostgreSQL, I am confident in my ability to deliver
-                    innovative solutions that drive organizational success.
+                    I am a versatile and results-driven software developer with
+                    a strong foundation in Agile methodologies and a passion for
+                    leveraging cutting-edge technology to solve complex
+                    problems.{" "}
+                    <span style={{ color: "gold" }}>
+                      Proficient in HTML, CSS, JavaScript, TypeScript, React.js,
+                      Next.js, React Native, Node.js, Express.js, MongoDB,
+                      Sequelize ORM, WebSockets, Supabase,
+                      Authentications (JWT, OAuth, Passport.js, etc), Docker &
+                      Containers, CI/CD (GitHub Actions), MySQL, Jest,
+                    </span> I excel at building scalable, high-performance
+                    applications thatenhance user experience and drive business
+                    growth.
                   </p>
                   <a href="#connect" style={{ textDecoration: "none" }}>
                     <button>
