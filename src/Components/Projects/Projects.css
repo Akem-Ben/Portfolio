@@ -144,3 +144,13 @@
     max-height: 1000px;
     overflow-y: scroll;
   }
+
+  .activities {
+    background-color: "#151515";
+    padding: "20px";
+    border-radius: "20px";
+    display: "flex";
+    justify-content: "space-between";
+    max-height: 800px;
+    overflow-y: scroll;
+  }

@@ -121,7 +121,7 @@ const Projects = () => {
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="second">
-                    Volunteer Activities/Accomplishments
+                    Activities
                   </Nav.Link>
                 </Nav.Item>
               </Nav>
@@ -135,22 +135,16 @@ const Projects = () => {
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   <Row
-                    style={{
-                      backgroundColor: "#151515",
-                      padding: "20px",
-                      borderRadius: "20px",
-                      display: "flex",
-                      justifyContent: "space-between",
-                    }}
+                    className="activities"
                   >
                     <Col
                       xs={12}
                       md={6}
                       xl={7}
-                      style={{ width: "50%", padding: "10px" }}
+                      style={{ width: "100%", padding: "10px" }}
                     >
                       <h4>
-                        Intern at Decagon Institute (unpaid){" "}
+                        Intern at Decagon Institute{" "}
                         <a href="https://decagon.institute/" target="__blank">
                           <FiExternalLink className="link-out" />
                         </a>
@@ -211,7 +205,7 @@ const Projects = () => {
                       xs={12}
                       md={6}
                       xl={7}
-                      style={{ width: "50%", padding: "10px" }}
+                      style={{ width: "100%", padding: "10px" }}
                     >
                       <h4>
                         Backend Intern at Flick Finance Solutions (unpaid){" "}
@@ -272,7 +266,7 @@ const Projects = () => {
                       xs={12}
                       md={6}
                       xl={7}
-                      style={{ width: "50%", padding: "10px" }}
+                      style={{ width: "100%", padding: "10px" }}
                     >
                       <h4>
                         Freelance Web Html/Css Tutor
@@ -298,7 +292,7 @@ const Projects = () => {
                       xs={12}
                       md={6}
                       xl={7}
-                      style={{ width: "50%", padding: "10px" }}
+                      style={{ width: "100%", padding: "10px" }}
                     >
                       <h4>
                         Associate Software Engineer{" "}
